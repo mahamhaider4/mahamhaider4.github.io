@@ -3,7 +3,7 @@ body, h1, h2, h3, p, a, ul, li {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    font-weight: normal; /* Ensure no bold text */
+    font-weight: normal; /* no bold */
 }
 
 /* Smooth scrolling */
@@ -44,27 +44,37 @@ header p {
     margin: 5px;
     border-radius: 6px;
     text-decoration: none;
-    transition: 0.3s;
-    font-weight: normal; /* ensure button text is normal */
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-/* Buttons */
-.header-buttons .btn:not(.resume-btn) {
-    background-color: white;
-    color: #4A90E2;
+/* Buttons hover effect */
+.header-buttons .btn:hover {
+    background-color: #cde6fb; /* lighter blue on hover */
+    transform: translateY(-2px);
 }
 
-.header-buttons .btn:not(.resume-btn):hover {
-    background-color: #dbe9fb;
-}
-
-.header-buttons .resume-btn {
+.resume-btn {
     background-color: #FFD700;
     color: #333;
 }
 
-.header-buttons .resume-btn:hover {
-    background-color: #FFC107;
+.resume-btn:hover {
+    background-color: #FFB700; /* slightly darker yellow */
+    transform: translateY(-2px);
+}
+
+.back-home-btn {
+    display: block;
+    margin: 20px auto 0;
+    background-color: #4A90E2;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+}
+
+.back-home-btn:hover {
+    background-color: #357ABD; /* slightly darker blue */
+    transform: translateY(-2px);
 }
 
 /* Sections */
@@ -82,8 +92,6 @@ section h2 {
     color: #4A90E2;
     border-bottom: 2px solid #4A90E2;
     display: inline-block;
-    padding-bottom: 5px;
-    font-weight: normal; /* ensure section headings are normal */
 }
 
 /* Skills */
