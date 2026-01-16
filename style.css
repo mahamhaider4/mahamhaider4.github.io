@@ -3,7 +3,7 @@ body, h1, h2, h3, p, a, ul, li {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    font-weight: normal; /* no bold */
+    font-weight: normal;
 }
 
 /* Smooth scrolling */
@@ -17,6 +17,40 @@ body {
     padding: 20px;
     background-color: #f4f4f9;
     color: #333;
+}
+
+.top-nav {
+    text-align: center;
+    margin-top: 20px; /* pushes buttons down only */
+    margin-bottom: 20px; /* keeps space below buttons */
+}
+
+
+.top-nav .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 6px;
+    text-decoration: none;
+    background-color: #4A90E2;
+    color: white;
+    font-family: 'Verdana', sans-serif; /* button font like before */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.top-nav .btn:hover {
+    background-color: #357ABD; /* slightly darker blue */
+    transform: translateY(-2px);
+}
+
+.resume-btn {
+    background-color: #FFD700;
+    color: #333;
+}
+
+.resume-btn:hover {
+    background-color: #FFB700;
+    transform: translateY(-2px);
 }
 
 /* Header */
@@ -36,45 +70,6 @@ header h1 {
 header p {
     font-size: 1.2em;
     margin-bottom: 25px;
-}
-
-.header-buttons .btn {
-    display: inline-block;
-    padding: 12px 25px;
-    margin: 5px;
-    border-radius: 6px;
-    text-decoration: none;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-/* Buttons hover effect */
-.header-buttons .btn:hover {
-    background-color: #cde6fb; /* lighter blue on hover */
-    transform: translateY(-2px);
-}
-
-.resume-btn {
-    background-color: #FFD700;
-    color: #333;
-}
-
-.resume-btn:hover {
-    background-color: #FFB700; /* slightly darker yellow */
-    transform: translateY(-2px);
-}
-
-.back-home-btn {
-    display: block;
-    margin: 20px auto 0;
-    background-color: #4A90E2;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 6px;
-}
-
-.back-home-btn:hover {
-    background-color: #357ABD; /* slightly darker blue */
-    transform: translateY(-2px);
 }
 
 /* Sections */
@@ -157,5 +152,9 @@ a:hover {
     }
     .skills-list {
         flex-direction: column;
+    }
+    .top-nav .btn {
+        padding: 8px 16px;
+        margin: 3px;
     }
 }
