@@ -30,6 +30,7 @@ header p {
     margin: 10px 0 20px 0;
 }
 
+/* Buttons */
 header .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -38,15 +39,27 @@ header .btn {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    margin: 5px;
+    transition: 0.3s;
 }
 
 header .btn:hover {
     background-color: #dbe9fb;
 }
 
+/* Resume button specific */
+.resume-btn {
+    background-color: #FFD700;
+    color: #333;
+}
+
+.resume-btn:hover {
+    background-color: #FFC107;
+}
+
 /* Sections */
 section {
-    max-width: 800px;
+    max-width: 900px;
     margin: 40px auto;
     padding: 20px;
     background-color: white;
@@ -55,19 +68,49 @@ section {
 }
 
 section h2 {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     color: #4A90E2;
 }
 
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
 .project {
-    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
 
 /* Links */
 a {
     color: #4A90E2;
+    text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Contact section styling */
+#contact p {
+    margin: 10px 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+    header p {
+        font-size: 1em;
+    }
+    section {
+        margin: 20px 10px;
+        padding: 15px;
+    }
 }
