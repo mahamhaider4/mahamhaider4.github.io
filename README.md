@@ -2,13 +2,13 @@
 
 Welcome to my personal portfolio! This site showcases my projects, technical skills, and experience in **product, analytics, and cloud computing**.  
 
-I am a **Finance & Business Analytics graduate (Cum Laude)** from DePaul University and an **AWS Certified Cloud Practitioner (CLF-C02)**. My portfolio demonstrates my ability to solve business problems using data-driven insights, cloud technologies, and analytical tools.  
+I am a Finance & Business Analytics graduate (Cum Laude) from DePaul University and an AWS Certified Cloud Practitioner (CLF-C02). My portfolio demonstrates my ability to solve business problems using data-driven insights, cloud technologies, and analytical tools.  
 
 ---
 
 ## 🌐 Live Portfolio
 You can view my live portfolio here:  
-[https://YOUR_CLOUDFRONT_LINK](https://YOUR_CLOUDFRONT_LINK)  
+[(https://d3ja6qg5vjgxoc.cloudfront.net/)](https://d3ja6qg5vjgxoc.cloudfront.net/)  
 
 > This site is hosted on AWS S3 with a CloudFront distribution for secure, fast access.  
 
