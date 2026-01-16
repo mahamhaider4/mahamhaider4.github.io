@@ -3,6 +3,12 @@ body, h1, h2, h3, p, a, ul, li {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    font-weight: normal; /* Ensure no bold text */
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
 }
 
 /* Body */
@@ -16,7 +22,7 @@ body {
 /* Header */
 header {
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px;
     background: linear-gradient(135deg, #4A90E2, #50C9CE);
     color: white;
     border-radius: 0 0 20px 20px;
@@ -29,7 +35,7 @@ header h1 {
 
 header p {
     font-size: 1.2em;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .header-buttons .btn {
@@ -37,12 +43,12 @@ header p {
     padding: 12px 25px;
     margin: 5px;
     border-radius: 6px;
-    font-weight: bold;
     text-decoration: none;
     transition: 0.3s;
+    font-weight: normal; /* ensure button text is normal */
 }
 
-/* View Projects button */
+/* Buttons */
 .header-buttons .btn:not(.resume-btn) {
     background-color: white;
     color: #4A90E2;
@@ -52,7 +58,6 @@ header p {
     background-color: #dbe9fb;
 }
 
-/* Resume button */
 .header-buttons .resume-btn {
     background-color: #FFD700;
     color: #333;
@@ -78,9 +83,10 @@ section h2 {
     border-bottom: 2px solid #4A90E2;
     display: inline-block;
     padding-bottom: 5px;
+    font-weight: normal; /* ensure section headings are normal */
 }
 
-/* Skills list */
+/* Skills */
 .skills-list {
     list-style-type: none;
     display: flex;
@@ -92,7 +98,6 @@ section h2 {
     background-color: #e0f2ff;
     padding: 8px 12px;
     border-radius: 6px;
-    font-weight: bold;
 }
 
 /* Projects Grid */
